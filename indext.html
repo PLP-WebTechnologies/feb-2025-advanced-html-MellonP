@@ -1,92 +1,161 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>SZA's Concert</title>
-        <style>
-            h2 {
-                background-color: black;
-                color: white;
-            }
-            table {
-                background-color: black;
-            }
-            thead tr {
-                background-color: grey;
-            }
-            tbody tr:nth-child(even) {
-                background-color: lightgrey;
-            }
-        </style>
-    </head>
-    <body>
-        <h2>Book A Seat</h2>
-        <h1>Songs List</h1>
-        <ol type="i">
-            <li>Snooze</li>
-            <li>Nobody Gets Me</li>
-            <li>Love Galore</li>
-            <li>I Hate U</li>
-            <li>Shrink</li>
-            <li>20 Something</li>
-        </ol>
-        <h2>Preview</h2>
-        <img src="https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="SZA concert preview">
-        <img src="oceon.png" height="25" width="50" alt="concert vibes">
-        <h2>HTML Tables</h2>
-        <table>
-            <caption>For Enquiries</caption>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Surname</th>
-                    <th>Email</th>
-                    <th>Contacts</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Adrian</td>
-                    <td>Bilon</td>
-                    <td>adrianbilin@gmail.com</td>
-                    <td>+2783 7862 097</td>
-                    <td>27/06/2025</td>
-                </tr>
-                <tr>
-                    <td>Isabel</td>
-                    <td>Carry</td>
-                    <td>isabelcarry@gmail.com</td>
-                    <td>+2772 0654 235</td>
-                    <td>27/06/2025</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th>Iftikaar</th>
-                    <th>Xaxier</th>
-                    <th>iftikaarxavier@gmail.com</th>
-                    <th>+2763 7223 512</th>
-                    <th>27/06/2025</th>
-                </tr>
-            </tfoot>
-        </table>
-        <h2>HTML Form</h2>
-        <form action="" method="">
-            <label for="full_name">Full names:</label>
-            <input type="text" id="full_name" name="full-name" placeholder="Enter your full names here" required>
-            <br><br>
-            <label for="gender">Gender</label>
-            <input type="radio" name="gender" value="Female">Female
-            <br><br>
-            <label for="languages">Languages</label>
-            <input type="checkbox" name="languages" value="english">English
-            <input type="checkbox" name="languages" value="swahili">Swahili
-            <input type="checkbox" name="languages" value="french">French
-            <br><br>
-            <input type="submit" value="Register">
-            <button type="reset">Cancel</button>
-        </form>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SZA's Concert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1, h2 {
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        thead {
+            background-color: grey;
+            color: white;
+        }
+        tbody tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: white;
+        }
+        tfoot {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            margin: auto;
+        }
+        input, button {
+            padding: 8px;
+            margin: 5px 0;
+            width: 100%;
+        }
+        input[type="submit"], button {
+            background-color: #222;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, button:hover {
+            background-color: #444;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Book A Seat</h2>
+    
+    <h1>Songs List</h1>
+    <ol type="i">
+        <li>Snooze</li>
+        <li>Nobody Gets Me</li>
+        <li>Love Galore</li>
+        <li>I Hate U</li>
+        <li>Shrink</li>
+        <li>20 Something</li>
+    </ol>
+
+    <h2>Preview</h2>
+    <img src="https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg" alt="SZA concert preview">
+    <img src="oceon.png" height="50" width="100" alt="Concert Vibes (Check image file exists)">
+
+    <h2>For Enquiries</h2>
+    <table>
+        <caption><strong>Contact Details</strong></caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Adrian</td>
+                <td>Bilon</td>
+                <td>adrianbilin@gmail.com</td>
+                <td>+2783 7862 097</td>
+                <td>27/06/2025</td>
+            </tr>
+            <tr>
+                <td>Isabel</td>
+                <td>Carry</td>
+                <td>isabelcarry@gmail.com</td>
+                <td>+2772 0654 235</td>
+                <td>27/06/2025</td>
+            </tr>
+            <tr>
+                <td>Iftikaar</td>
+                <td>Xavier</td>
+                <td>iftikaarxavier@gmail.com</td>
+                <td>+2763 7223 512</td>
+                <td>27/06/2025</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Register for Updates</h2>
+    <form action="submit.php" method="POST">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label><input type="radio" name="gender" value="Female" required> Female</label>
+            <label><input type="radio" name="gender" value="Male" required> Male</label>
+            <label><input type="radio" name="gender" value="Other" required> Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Languages Spoken</legend>
+            <label><input type="checkbox" name="languages[]" value="English"> English</label>
+            <label><input type="checkbox" name="languages[]" value="Swahili"> Swahili</label>
+            <label><input type="checkbox" name="languages[]" value="French"> French</label>
+        </fieldset>
+
+        <input type="submit" value="Register">
+        <button type="reset">Cancel</button>
+    </form>
+
+</body>
 </html>
+
 
 
